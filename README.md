@@ -1,4 +1,4 @@
-# OCD Patient Diagnosis Dashboard 
+![Photo Collage Maker_2023_12_27_05_49_06](https://github.com/Shana-Naz/OCDdash/assets/123564734/c4988636-a8ce-4443-94be-53df6001fed7)# OCD Patient Diagnosis Dashboard 
 # INTRODUCTION
 The "OCD Patient Dataset" is a comprehensive collection of information pertaining to 1500 individuals diagnosed with Obsessive-Compulsive Disorder (OCD). This dataset encompasses a wide range of parameters, providing a detailed insight into the demographic and clinical profiles of these individuals.
 Included in this dataset are key demographic details such as age, gender, ethnicity, marital status, and education level, offering a comprehensive overview of the sample population. Additionally, clinical information like the date of OCD diagnosis, duration of symptoms, and any previous psychiatric diagnoses are recorded, providing context to the patients' journeys.
@@ -9,15 +9,18 @@ The dataset outlines the medications prescribed to patients, offering valuable i
 
 Select * from ocd_patient_dataset;
 
-### Query to Count Femlae vs Male that have ocd and their avg obsession score
+### Query to Count Female vs Male that have ocd and their avg obsession score
 
 SELECT 
     Gender,
     COUNT(`Patient ID`) AS patient_count,
     ROUND(avg(`Y-BOCS Score (Obsessions)`),2) AS avg_obsession_score
+    
 FROM
     ocd_patient_dataset
+    
 GROUP BY Gender
+
 ORDER BY patient_count;
 
 ### Count of patients by ethnicity and their respective avg obsession score
@@ -26,16 +29,20 @@ SELECT
     Ethnicity,
     COUNT(`Patient ID`) AS patient_count,
     ROUND(AVG(`Y-BOCS Score (Obsessions)`),2) AS avg_obsession_score
+    
 FROM 
     ocd_patient_dataset
+    
 GROUP BY 
     Ethnicity
+    
 ORDER BY 
     patient_count;
 
 #### The "OCD Diagnosis Date" column was in Text format. To modify the data type, we use, Alter statement.
 
 ALTER TABLE ocd_patient_dataset 
+
 MODIFY `OCD Diagnosis Date` DATE;
 
 ### Number of people diagnosed with OCD month over month
@@ -43,9 +50,12 @@ MODIFY `OCD Diagnosis Date` DATE;
 SELECT
      DATE_FORMAT(`OCD Diagnosis Date`, '%Y-%m-01 00:00:00') AS diagnosis_by_month,
      COUNT(`Patient ID`) AS patient_count
+     
 FROM
      ocd_patient_dataset
+     
 GROUP BY diagnosis_by_month
+
 ORDER BY diagnosis_by_month;
 
 ### What is the Count of the most common obsession type and its respective avg obsession score
@@ -54,10 +64,13 @@ SELECT
     `Obsession Type`,
     COUNT(`Patient ID`) AS patient_count,
     ROUND(AVG(`Y-BOCS Score (Obsessions)`),2) AS avg_obsession_score
+    
 FROM
     ocd_patient_dataset
+    
 GROUP BY 
     `Obsession Type`
+    
 ORDER BY 
     patient_count;
 
@@ -67,10 +80,13 @@ SELECT
      `Compulsion Type`,
      COUNT(`Patient ID`) AS patient_count,
      ROUND(AVG(`Y-BOCS Score (Compulsions)`),2) AS avg_compulsion_score
+     
 FROM
     ocd_patient_dataset
+    
 GROUP BY
     `Compulsion Type`
+    
 ORDER BY 
      patient_count;
 
@@ -79,9 +95,12 @@ ORDER BY
 SELECT
        SUM(`Duration of Symptoms (months)`) AS symptoms_duration,
        Gender
+       
 FROM
        ocd_patient_dataset
+       
 GROUP BY gender
+
 Order by gender;
 
 ### What is the count of each medications
@@ -89,10 +108,19 @@ Order by gender;
 SELECT 
     Medications,
     COUNT(Medications) AS medications_count
+    
 FROM
     ocd_patient_dataset
+    
 GROUP BY Medications
+
 ORDER BY medications_count;
+
+#### The Result Datasets exported to the PC. 
+
+![Photo Collage Maker_2023_12_27_05_49_06](https://github.com/Shana-Naz/OCDdash/assets/123564734/b67aecc9-0650-4a8c-b5a9-bcea5500a417)
+
+
 
 
 
