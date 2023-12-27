@@ -120,7 +120,52 @@ ORDER BY medications_count;
 
 ![Photo Collage Maker_2023_12_27_05_49_06](https://github.com/Shana-Naz/OCDdash/assets/123564734/b67aecc9-0650-4a8c-b5a9-bcea5500a417)
 
-### data
+#### Load each result datasets into Power BI.
+
+![Photo Collage Maker_2023_12_27_07_34_02](https://github.com/Shana-Naz/OCDdash/assets/123564734/cdf92f05-0115-4ac7-810c-5994ef24d6e3)
+
+# Charts and Graphs
+
+## Avg obsession score by gender
+
+![avg obs score](https://github.com/Shana-Naz/OCDdash/assets/123564734/580eaced-c406-46ad-beb4-6ef26eb31688)
+
+## Patient ethnicity by avg obsession score
+
+![ethnicity](https://github.com/Shana-Naz/OCDdash/assets/123564734/18b0c9b5-9604-4b36-8579-bdaf4f46f7e5)
+
+## Total patients Month over Month
+
+![patients MOM](https://github.com/Shana-Naz/OCDdash/assets/123564734/9dd6e0d8-59dc-40bc-a33d-afd64edd5bcd)
+
+## Obsession types of patients
+
+![obs type](https://github.com/Shana-Naz/OCDdash/assets/123564734/e5f668e0-be9f-4a96-9841-2e02dcafee25)
+
+## Compulsion types of patients
+
+![comp type](https://github.com/Shana-Naz/OCDdash/assets/123564734/07b8d51e-0cab-4212-a18e-5b2cc04a5632)
+
+## Cards to display, "Total Patients", "Avg obsession score", "Avg compulsion score", "Total duration of symptoms"
+
+![ocd cards](https://github.com/Shana-Naz/OCDdash/assets/123564734/bf4a1df8-7373-4331-9a0a-4e4e144483ed)
+
+## Medications given to patients
+
+![medications ocd](https://github.com/Shana-Naz/OCDdash/assets/123564734/709561d9-8a7a-48e9-be5b-558787e7010b)
+
+# DASHBOARD
+
+![Screenshot (17)](https://github.com/Shana-Naz/OCDdash/assets/123564734/2a5d709b-345b-49b6-a47d-0e2696d91c6c)
+
+
+
+
+
+
+
+
+
 
 
 
