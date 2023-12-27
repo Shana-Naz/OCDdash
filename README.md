@@ -1,4 +1,4 @@
-![Photo Collage Maker_2023_12_27_05_49_06](https://github.com/Shana-Naz/OCDdash/assets/123564734/c4988636-a8ce-4443-94be-53df6001fed7)# OCD Patient Diagnosis Dashboard 
+# OCD Patient Diagnosis Dashboard 
 # INTRODUCTION
 The "OCD Patient Dataset" is a comprehensive collection of information pertaining to 1500 individuals diagnosed with Obsessive-Compulsive Disorder (OCD). This dataset encompasses a wide range of parameters, providing a detailed insight into the demographic and clinical profiles of these individuals.
 Included in this dataset are key demographic details such as age, gender, ethnicity, marital status, and education level, offering a comprehensive overview of the sample population. Additionally, clinical information like the date of OCD diagnosis, duration of symptoms, and any previous psychiatric diagnoses are recorded, providing context to the patients' journeys.
